@@ -11,7 +11,6 @@ This repo is built for people who want a **fast, modern, distraction-free termin
 * Pre-configured **Alacritty terminal settings**
 * A collection of **ready-to-use color themes**
 * A clean **toml-based configuration system**
-* Optional shell enhancements (`zsh`, `p10k`)
 
 Everything is structured to be **plug-and-play**.
 
@@ -34,7 +33,7 @@ Alacritty is used because:
 terminal-config/
 │
 ├── alacritty/
-│   ├── alacritty.toml        # Main config file
+│   ├── alacritty.toml
 │   └── themes/
 │       ├── alabaster_dark.toml
 │       ├── baitong.toml
@@ -45,13 +44,59 @@ terminal-config/
 │       ├── print_colors.sh
 │       └── README.md
 │
-├── extras/
-│   ├── .zshrc
-│   └── .p10k.zsh
+├── screenshots/
+│   ├── alabaster_dark.png
+│   ├── baitong.png
+│   ├── coolnight.png
+│   ├── github_dark_high_contrast.png
+│   ├── gotham.png
+│   └── hyper.png
 │
 ├── LICENSE
 └── README.md
 ```
+
+---
+
+## 🖼️ Terminal Theme Showcase
+
+A visual preview of all included Alacritty themes applied in a real terminal setup.
+
+---
+
+### 🌙 Coolnight (Default)
+
+![Coolnight](screenshots/coolnight.png)
+
+---
+
+### 🤍 Alabaster Dark
+
+![Alabaster Dark](screenshots/alabaster_dark.png)
+
+---
+
+### 🌊 Baitong
+
+![Baitong](screenshots/baitong.png)
+
+---
+
+### 🐙 GitHub Dark High Contrast
+
+![GitHub Dark High Contrast](screenshots/github_dark_high_contrast.png)
+
+---
+
+### 🌌 Gotham
+
+![Gotham](screenshots/gotham.png)
+
+---
+
+### ⚡ Hyper
+
+![Hyper](screenshots/hyper.png)
 
 ---
 
@@ -196,17 +241,6 @@ This keeps your setup **modular and clean**.
 
 ---
 
-## 🧩 Optional Extras (Later Use)
-
-Inside `extras/` you will find:
-
-* `.zshrc` → shell configuration
-* `.p10k.zsh` → Powerlevel10k prompt config
-
-> These are optional and can be added later for enhanced shell experience.
-
----
-
 ## Tip
 
 If you want to switch themes quickly:
@@ -228,3 +262,4 @@ This setup is designed to be:
 * Clean to maintain
 
 No complexity. No clutter. Just a working terminal setup.
+
