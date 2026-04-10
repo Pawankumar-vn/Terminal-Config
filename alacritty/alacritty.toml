@@ -1,0 +1,62 @@
+# ==========================================
+# ALACRITTY TERMINAL CONFIGURATION FILE
+# ==========================================
+# This is the main configuration file for Alacritty.
+# It controls appearance, fonts, keybindings, scrolling,
+# themes, and overall terminal behavior.
+#
+# Why this file is linked to ~/.config/alacritty/alacritty.toml ?
+# - Alacritty ONLY reads config from ~/.config/alacritty/
+# - We store the real file in ~/alacritty-config/ for organization
+# - Then create a symlink to ~/.config so Alacritty can read it
+# - This setup is called "dotfiles management" (clean + reusable setup)
+
+[general]
+# Import external theme file (colors, background, etc.)
+import = [
+    "~/Terminal-Config/alacritty/themes/coolnight.toml"
+]
+
+[keyboard]
+# Custom keybindings
+bindings = [
+  # Paste with Ctrl + V (faster than Ctrl+Shift+V)
+  { key = "V", mods = "Control", action = "Paste" }
+]
+
+[env]
+# Terminal type (important for compatibility with tools like vim, tmux)
+TERM = "xterm-256color"
+
+[window]
+# Default terminal size when opening
+dimensions = { columns = 150, lines = 40 }
+
+# Space inside terminal (padding)
+padding = { x = 12, y = 12 }
+
+# Remove title bar & borders (clean look)
+decorations = "none"
+
+# Transparency (0.0 = fully transparent, 1.0 = solid)
+opacity = 0.9
+
+[font]
+# Font size
+size = 12.0
+
+[font.normal]
+# Main font (Nerd Font for icons support)
+family = "JetBrainsMono Nerd Font"
+
+[scrolling]
+# How much history you can scroll back
+history = 20000
+
+# Scroll speed multiplier (higher = faster scroll)
+multiplier = 5
+
+[selection]
+# Auto copy text when selected
+save_to_clipboard = true
+
